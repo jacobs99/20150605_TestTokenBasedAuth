@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="App" >
+<head>
+    <meta charset="utf-8">
+    <title>20150605_TestTokenBasedAuth</title>
+    <!-- using angular 1.3 to make sure no breaking changes are coded!! -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+    <script src="app/app.js"></script>
+</head>
+<body ng-controller="Ctrl01">
+
+<form ng-submit="processForm()">
+
+    <p>{{status_message}}</p>
+
+    <br>
+
+    <input type="text" placeholder="user id" ng-model="user_id"/><br><br>
+    <input type="text" placeholder="password" ng-model="user_id"/><br><br>
+    <input type="submit" value="login"/><br><br><br>
+
+
+    <input type="text" placeholder="number to square" ng-model="user_input"/>
+    <input type="submit" value="send"/>
+
+    <p>Input is: <b><span ng-bind="data.input_val"></span></b></p>
+    <p>Output is: <b><span ng-bind="data.output_val"></span></b></p>
+
+</form>
+
+</body>
+</html>
+
+
